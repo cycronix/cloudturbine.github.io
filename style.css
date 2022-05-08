@@ -1,0 +1,141 @@
+:root {
+    --primary: #0e2033;
+    --secondary: #003e7c;
+  }
+
+  html {
+    font-size: 20px;
+  }
+
+  body {
+    color: var(--primary);
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url(assets/ct-bg.jpg);
+    background-size: cover;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+  }
+
+  .ct-hero {
+    margin: auto;
+    padding: 1rem;
+    position: relative;
+  }
+
+  .ct-logo {
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto .5rem auto;
+  }
+
+  .ct-title {
+    font-size: 3rem;
+    margin-bottom: .5rem;
+    font-weight: 900;
+  }
+
+  .ct-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .ct-description {
+    margin: 2rem auto;
+    font-size: 1rem;
+  }
+
+  .ct-blurbs {
+    font-size: .65rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: .0625em;
+    padding: 1rem;
+    color: var(--primary);
+  }
+
+  .ct-blurb {
+    display: flex;
+  }
+
+  .ct-blurb.ct-blurb--dots::before,
+  .ct-blurb.ct-blurb--dots::after {
+    content: '•';
+    margin: 0 3vw;
+  }
+
+  .ct-ctas {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ct-cta {
+    display: block;
+    line-height: 1;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    text-decoration: none;
+    margin: .5rem;
+    max-width: 160px;
+  }
+
+  .ct-cta--primary {
+    background: var(--primary);
+    color: white;
+  }
+
+  .ct-cta--primary:hover {
+    background: var(--secondary);
+  }
+
+  .ct-cta--secondary {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+  }
+
+  .ct-cta--secondary:hover {
+    border-color: var(--secondary);
+    color: var(--secondary);
+  }
+
+  .ct-footer {
+    padding: 1rem;
+    margin-top: auto;
+  }
+
+  .ct-footer a {
+    color: var(--secondary);
+    margin: 0;
+  }
+
+  .ct-footer a:hover {
+    color: var(--secondary);
+    opacity: 0.75;
+  }
+
+  @media only screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  .ct-title {
+    font-size: 2rem;
+  }
+  .ct-ctas {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ct-cta {
+    width: 100%;
+  }
+}
